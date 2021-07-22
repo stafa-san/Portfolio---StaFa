@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro {
+    background-color: #240147;
+    color: #00E293;
+    padding: 50px 0;
+}
+
+.intro-content {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.menu-bar {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(-90deg, #240147, #00E293);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.nav-link {
+    font-size: 16px;
+    margin: 3px;
+    color: #fff!important;
+}
+
+.navbar-nav {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.menu-bar .navbar-toggler {
+    padding-right: 20px;
+    outline: none!important;
+    border: none!important;
+}
+
+.navbar .fas {
+    color: #fff!important;
+    font-size: 26px;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-brand img {
+    width: 80px;
+}
+
+/* Blackjack Game */
+
+.container-002 {
+    border: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-box-results, .flex-box-play {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.flex-box-play, .flex-box-deal {
+    background-color: green;
+    color: white;
+}
+
+.flex-box-play div {    
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    flex: 1;    
+    min-height: 350px;
+    justify-content: space-around;
+}
+
+.flex-box-deal {
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box-deal button {
+    margin: 10px;
+}  
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+@media only screen and (max-width: 1000px) {
+    .nav-link:hover {
+        border-bottom: none!important;
+    }
+}
