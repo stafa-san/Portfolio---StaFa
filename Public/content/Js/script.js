@@ -186,3 +186,34 @@ function showResult (winner) {
 
         }
 }
+
+
+//Challenge 003: CountDown
+
+const countdown = () => {
+    //Indication of future and present date, and also the gap between them.
+    const countDate = new Date('October 20, 2021 23:59:00').getTime();
+    const nowDate = new Date().getTime();
+    const gap = countDate - nowDate;
+    
+    //How to define the time
+    const second = 1000;
+    const minute = second * 60;
+    const hour = minute * 60;
+    const day = hour * 24;
+
+    //Calculations for days
+    const textDay = Math.floor(gap / day);
+    const textHour = Math.floor((gap % day) / hour);
+    const textMinute = Math.floor((gap % hour) / minute);
+    const textSecond = Math.floor((gap % minute) / second);
+    console.log(textDay, textHour, textMinute, textSecond);
+
+    //Display on the front
+    document.querySelector('.day').textContent = textDay;
+    document.querySelector('.hour').textContent = textHour;
+    document.querySelector('.minute').textContent = textMinute;    
+    document.querySelector('.second').textContent = textSecond;
+}
+
+setInterval(countdown, 1000);

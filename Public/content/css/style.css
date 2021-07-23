@@ -20,7 +20,7 @@
     margin: 0 auto;
 }
 
-.header {
+.header, .countdown {
     background-image: linear-gradient(-90deg, #240147, #00E293);
 }
 
@@ -62,6 +62,39 @@ footer {
 .navbar-brand img {
     width: 80px;
 }
+
+/* Countdown */
+
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 50px 0;   
+    text-align: center;
+}
+
+.countdown, .startDate {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.countdown {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid black; 
+    color: #fff;
+}
+
+.day, .hour, .minute, .second {
+    font-size: 2rem;
+}
+
+.startDate {
+    padding: 20px;
+}
+
+
 
 /* Blackjack Game */
 
